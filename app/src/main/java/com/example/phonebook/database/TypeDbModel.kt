@@ -15,8 +15,8 @@ data class TypeDbModel(
             TypeDbModel(1, "#FFFFFF","Mobile"),
             TypeDbModel(2, "#81FFC4","Home"),
             TypeDbModel(3, "#17C08A","Family"),
-            TypeDbModel(4, "#003280","Business"),
-            TypeDbModel(5, "#D00026","Emergency"),
+            TypeDbModel(4, "#003280","Work"),
+            TypeDbModel(5, "#D00026","HotLine"),
 
             )
         val DEFAULT_TAG = DEFAULT_TAGS[0]
