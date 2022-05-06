@@ -27,7 +27,7 @@ import com.example.phonebook.viewmodel.MainViewModel
 import com.example.phonebook.viewmodel.MainViewModelFactory
 
 class MainActivity : ComponentActivity() {
-    @OptIn(ExperimentalMaterialApi::class)
+    @ExperimentalMaterialApi
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
