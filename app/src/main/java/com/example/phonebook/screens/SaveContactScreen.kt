@@ -182,16 +182,7 @@ private fun SaveContactContent(
     onContactChange: (ContactModel) -> Unit
 ) {
     Column(modifier = Modifier.fillMaxSize()) {
-        val isChecked: Boolean = contact.isImportantPersons
 
-        ImportantPersonsCheckOption(
-            isChecked = isChecked,
-            onCheckedChange = { ImportantPersonsNewValue ->
-                val isCheckedOff: Boolean = if (ImportantPersonsNewValue) true else false
-
-                onContactChange.invoke(contact.copy(isImportantPersons = isCheckedOff))
-            }
-        )
         ContentTextField(
             label = "Name",
             text = contact.name,
@@ -210,7 +201,16 @@ private fun SaveContactContent(
                 onContactChange.invoke(contact.copy(content = newContent))
             }
         )
+        val isChecked: Boolean = contact.isImportantPersons
 
+        ImportantPersonsCheckOption(
+            isChecked = isChecked,
+            onCheckedChange = { ImportantPersonsNewValue ->
+                val isCheckedOff: Boolean = if (ImportantPersonsNewValue) true else false
+
+                onContactChange.invoke(contact.copy(isImportantPersons = isCheckedOff))
+            }
+        )
         val canBeCheckedOff: Boolean = contact.isCheckedOff != null
 
         ContactCheckOption(
