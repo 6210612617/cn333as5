@@ -7,10 +7,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Delete
-import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.icons.filled.Menu
-import androidx.compose.material.icons.filled.Star
+import androidx.compose.material.icons.filled.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -120,7 +117,7 @@ fun ScreenNavigationButtonPreview() {
     PhoneBookTheme {
         ScreenNavigationButton(
             icon = Icons.Filled.Home,
-            label = "Notes",
+            label = "Phonebook",
             isSelected = false,
             onClick = { }
         )
@@ -171,7 +168,7 @@ fun AppDrawer(
         Divider(color = MaterialTheme.colors.onSurface.copy(alpha = .2f))
 
         ScreenNavigationButton(
-            icon = Icons.Filled.Home,
+            icon = Icons.Filled.Person,
             label = "Contacts",
             isSelected = currentScreen == Screen.Contacts,
             onClick = {
@@ -180,7 +177,7 @@ fun AppDrawer(
             }
         )
         ScreenNavigationButton(
-            icon = Icons.Filled.Star,
+            icon = Icons.Filled.Favorite,
             label = "ImportantPersons",
             isSelected = currentScreen == Screen.Contacts,
             onClick = {

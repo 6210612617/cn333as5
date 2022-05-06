@@ -28,7 +28,7 @@ data class ContactDbModel(
             ContactDbModel(5, "Peter pan", "07878565252", false, false, 1, false,false),
             ContactDbModel(6, "Serial wong", "0626559585", false, false, 1, false,false),
             ContactDbModel(7, "V-song", "09878754265", false, false, 2, false,false),
-            ContactDbModel(8, "Ambulance", "1669", false, false, 5, false,false),
+            ContactDbModel(8, "Police", "191", false, false, 5, false,false),
             ContactDbModel(9, "Kim miso", "012345678", false, false, 4, false,false),
             ContactDbModel(10, "thor ascard", "033558998", false, false, 5, false,false),
             ContactDbModel(11, "Jinger hi", "09885554475", true, false, 1, false,false),
